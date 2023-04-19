@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <meta charset="utf-8">
@@ -58,6 +58,7 @@
     <!-- Header -->
     <header class="row">
       <div class="col-sm-12 col-md-12 col-lg-12">
+        <h3>Online order</h3>
         <p class="pt-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus enim lacus, vel tincidunt tellus volutpat
           quis. Proin sagittis tellus at ullamcorper imperdiet.
@@ -70,37 +71,59 @@
   <!-- Main -->
   <main class="container">
 
-    <!-- Boxes section -->
-    <center><section class="row d-flex justify-content-center">
-     <div class="col-sm-12 col-md-4 col-lg-4">
-        <h3>Food</h3>
-        <img class="img-fluid" src="https://picsum.photos/300/300?random=1" alt="lorem pixum image" />
-      </div>
-      
-      <div class="col-sm-12 col-md-4 col-lg-4">
-        <h3>Drinks</h3>
-        <img class="img-fluid" src="https://picsum.photos/300/300?random=2" alt="lorem pixum image" />
-      </div>
-      
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <h3>Books</h3>
-        <img class="img-fluid" src="https://picsum.photos/300/300?random=3" alt="lorem pixum image" />
-      </div>
-    </section></center>
+    <div class="input-group mb-3">
+      <span class="input-group-text">1. First and last name</span>
+      <input type="text" aria-label="First name" class="form-control">
+      <input type="text" aria-label="Last name" class="form-control">
+    </div>
+    
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">2. Food order</label>
+      <select class="form-select" id="inputGroupSelect01">
+        <option selected>Choose...</option>
+        <option value="1">Pastry</option>
+        <option value="2">Sandwitch</option>
+        <option value="3">Hot meal</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">3. Drink order</label>
+      <select class="form-select" id="inputGroupSelect01">
+        <option selected>Choose...</option>
+        <option value="1">Coffee</option>
+        <option value="2">Tea</option>
+        <option value="3">Cold drink</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-3">
+      <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+        <option selected>Payment options...</option>
+        <option value="1">PayPal</option>
+        <option value="2">Visa</option>
+        <option value="3">Debit</option>
+        <option value="4">Apple pay</option>
+        <option value="5">Google pay</option>
+      </select>
+      <button class="btn btn-outline-secondary" type="button">Enter</button>
+    </div>
+    
+    <div class="img-fluid text-center">
+      <img src="http://placekitten.com/600/900" alt="kitten">
+    </div>
 
   </main>
 
   <!--Google map-->
-  <div class="container-fluid m-0 p-0">
-
+  <div class="container-fluid text-center">
     <!--Google map-->
-    <div id="map-container-google-4" class="z-depth-1-half map-container-4" style="height: 5000px">
-      <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-        style="border:0" allowfullscreen></iframe>
+    <div id="map-container-google-4" class="z-depth-1-half map-container-4" style="height: 500px">
+      <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="5px"
+        style="border: 5px;" allowfullscreen></iframe>
     </div>
-
   </div>
-
 <!--Google Maps-->
 
   <!-- Footer -->
